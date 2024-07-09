@@ -61,7 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["email"] = $email;
 
                             // Redirect user to welcome page
-                            header("location: welcome.php");
+                            //header("location: lo.html");
+                            $welcome = "The Login is successfully.";
+                            echo "<script>alert('$welcome');</script>";
                         } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
